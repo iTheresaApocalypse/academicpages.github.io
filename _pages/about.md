@@ -1,15 +1,17 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Kuan Zhang(张宽)"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+I'm a senior undergraduate student at Beijing Institute of Technology (BIT), majoring in software engineering. I'm a coming PhD student from AI College of Tsinghua university.
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+My early research focused on data-centric AI, especially label noise and data selection. As vision-language models (VLMs) and reasoning models have grown impressively powerful, I've become deeply interested in the study of visual agents, especially utilizing VLMs in game area. My goal is to design general intelligent agents outperforming humans across all tasks in cyberspace.
+
+In life, I have a deep appreciation for (e)sports, AAA game, music, novel and amination. I got a master degree in League of Legends.
 
 A data-driven personal website
 ======
