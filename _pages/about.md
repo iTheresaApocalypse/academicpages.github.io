@@ -35,7 +35,7 @@ In life, I have a deep appreciation for (e)sports, AAA game, music, novel and am
 
 * [Paper Link](https://arxiv.org/abs/2505.00812)
 
-**Harnessing Diversity for Important Data Selection in Pretraining Large Language Models - ICLR 2025 Spotlight**
+**Harnessing Diversity for Important Data Selection in Pretraining Large Language Models**
 
 * ICLR 2025 Spotlight
    
