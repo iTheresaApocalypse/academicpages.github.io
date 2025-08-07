@@ -23,7 +23,7 @@ In life, I have a deep appreciation for (e)sports, AAA game, music, novel and am
 * _2022 - 2026(expected)_, School of Computer Science and Technology, Beijing Institute of Technology
 * _2019 - 2022_, Chengdu No.7 High School
 
-📝 Research Papers
+📝 Publications
 ------
 **Handling Label Noise via Instance-Level Difficulty Modeling and Dynamic Optimization**
 
