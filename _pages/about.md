@@ -33,7 +33,7 @@ In life, I have a deep appreciation for (e)sports, AAA game, music, novel and am
 
 * An efficient, hyperparameter-free, instance-level optimization framework for label noise in image classification.
 
-* [Paper](https://arxiv.org/abs/2505.00812 "")
+* [Paper Link](https://arxiv.org/abs/2505.00812)
 
 **Harnessing Diversity for Important Data Selection in Pretraining Large Language Models - ICLR 2025 Spotlight**
 
@@ -43,7 +43,7 @@ In life, I have a deep appreciation for (e)sports, AAA game, music, novel and am
 
 * Combine multi-arm bandit with influence function to select data for pretraining process of large language models.
 
-* [Paper](https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html "")
+* [Paper Link](https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html)
 
 🏆 Selected Awards
 ------
