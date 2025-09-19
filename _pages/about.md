@@ -9,9 +9,7 @@ redirect_from:
 
 :blush: About Me
 ------
-I'm a senior undergraduate student at Beijing Institute of Technology (BIT), majoring in software engineering. 
-
-I'm a coming PhD student from College AI of Tsinghua university.
+I am a senior undergraduate student at Beijing Institute of Technology (BIT), majoring in software engineering, while I am a coming PhD student from College AI of Tsinghua university.
 
 My early research focused on data-centric AI, especially label noise and data selection. As vision-language models (VLMs) and reasoning models have grown impressively powerful, I've become deeply interested in the study of visual agents, especially utilizing VLMs in game area. My goal is to design general intelligent agents outperforming humans across all tasks in cyberspace.
 
@@ -27,7 +25,7 @@ In life, I have a deep appreciation for (e)sports, AAA game, music, novel and am
 ------
 **Handling Label Noise via Instance-Level Difficulty Modeling and Dynamic Optimization**
 
-* Under Review
+* NeurIPS 2025 Poster
    
 * **Kuan Zhang**, Chengliang Chai, Jingzhe Xu, Chi Zhang, Han Han, Ye Yuan, Guoren Wang, Lei Cao
 
@@ -47,7 +45,7 @@ In life, I have a deep appreciation for (e)sports, AAA game, music, novel and am
 
 🏆 Selected Awards
 ------
-2023/2024 National Scholarship (Highest honor for undergraduates)
+2023/2024 National Scholarship (Highest honor for Chinese undergraduates)
 
 2024 MCM M Prize
 
