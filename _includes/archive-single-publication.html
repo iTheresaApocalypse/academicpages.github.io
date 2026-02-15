@@ -1,0 +1,69 @@
+{% include base_path %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="{{ include.type | default: 'list' }}__item">
+  <article class="archive__item archive__item--publication" itemscope itemtype="http://schema.org/CreativeWork">
+    {% comment %} Category / Tag badge (e.g. "Data-Centric AI", "Conference Papers") {% endcomment %}
+    {% if post.tag or post.pub_tag %}
+      <span class="pub-tag">{{ post.tag | default: post.pub_tag }}</span>
+    {% elsif post.collection == 'publications' and post.category and site.publication_category[post.category] %}
+      <span class="pub-tag">{{ site.publication_category[post.category].title }}</span>
+    {% endif %}
+
+    {% comment %} Venue badge (e.g. "NeurIPS 2025 Poster", "ICLR 2025 Spotlight") {% endcomment %}
+    {% if post.venue %}
+      <span class="pub-venue-badge">{{ post.venue }}</span>
+    {% endif %}
+
+    <h2 class="archive__item-title archive__item-title--pub" itemprop="headline">
+      {% if post.link %}
+        <a href="{{ post.link }}">{{ title }}</a>
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink" class="pub-permalink" aria-label="Permalink"><i class="fa fa-link" aria-hidden="true"></i></a>
+      {% else %}
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+      {% endif %}
+    </h2>
+
+    {% if post.authors or post.citation %}
+      <p class="pub-authors">
+        {% if post.authors %}
+          {{ post.authors }}
+        {% elsif post.citation %}
+          {{ post.citation | strip_html | truncate: 200 }}
+        {% endif %}
+      </p>
+    {% endif %}
+
+    {% if post.excerpt and include.show_excerpt != false %}
+      <p class="archive__item-excerpt pub-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 240 }}</p>
+    {% endif %}
+
+    {% comment %} Link buttons: PDF, Code, Dataset, Project, Poster, Slides, Video, BibTeX {% endcomment %}
+    {% assign has_links = false %}
+    {% if post.paperurl or post.codeurl or post.code or post.dataseturl or post.dataset or post.projecturl or post.project or post.slidesurl or post.videourl or post.video or post.bibtexurl %}
+      {% assign has_links = true %}
+    {% endif %}
+    {% if has_links %}
+      <div class="pub-links">
+        {% if post.paperurl %}
+          <a href="{{ post.paperurl }}" class="pub-link pub-link--pdf" target="_blank" rel="noopener">PDF</a>
+        {% endif %}
+        {% if post.codeurl %}<a href="{{ post.codeurl }}" class="pub-link" target="_blank" rel="noopener">Code</a>{% endif %}
+        {% if post.code %}<a href="{{ post.code }}" class="pub-link" target="_blank" rel="noopener">Code</a>{% endif %}
+        {% if post.dataseturl %}<a href="{{ post.dataseturl }}" class="pub-link" target="_blank" rel="noopener">Dataset</a>{% endif %}
+        {% if post.dataset %}<a href="{{ post.dataset }}" class="pub-link" target="_blank" rel="noopener">Dataset</a>{% endif %}
+        {% if post.projecturl %}<a href="{{ post.projecturl }}" class="pub-link" target="_blank" rel="noopener">Project</a>{% endif %}
+        {% if post.project %}<a href="{{ post.project }}" class="pub-link" target="_blank" rel="noopener">Project</a>{% endif %}
+        {% if post.slidesurl %}<a href="{{ post.slidesurl }}" class="pub-link" target="_blank" rel="noopener">Slides</a>{% endif %}
+        {% if post.videourl %}<a href="{{ post.videourl }}" class="pub-link" target="_blank" rel="noopener">Video</a>{% endif %}
+        {% if post.video %}<a href="{{ post.video }}" class="pub-link" target="_blank" rel="noopener">Video</a>{% endif %}
+        {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" class="pub-link" target="_blank" rel="noopener">BibTeX</a>{% endif %}
+      </div>
+    {% endif %}
+  </article>
+</div>

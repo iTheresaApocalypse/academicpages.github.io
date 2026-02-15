@@ -5,32 +5,47 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<div class="publications-page">
+  {% if site.author.googlescholar %}
+    <p class="pub-page-intro">You can also find my articles on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
+  {% endif %}
 
+  {% comment %} Featured Publications (optional: set featured: true in publication front matter) {% endcomment %}
+  {% assign featured_pubs = site.publications | where: "featured", true | reverse %}
+  {% if featured_pubs.size > 0 %}
+    <section class="pub-section pub-section--featured">
+      <h2 class="pub-section__title">Featured Publications</h2>
+      <div class="pub-list pub-list--featured">
+        {% for post in featured_pubs %}
+          {% include archive-single-publication.html %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
 
-
+  {% comment %} Main publications: by category or single list {% endcomment %}
+  <section class="pub-section">
+    {% if site.publication_category %}
+      {% for category in site.publication_category %}
+        {% assign cat_posts = site.publications | where: "category", category[0] | reverse %}
+        {% if cat_posts.size > 0 %}
+          <h2 class="pub-section__title">{{ category[1].title }}</h2>
+          <div class="pub-list">
+            {% for post in cat_posts %}
+              {% include archive-single-publication.html %}
+            {% endfor %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      <h2 class="pub-section__title">Selected Publications</h2>
+      <div class="pub-list">
+        {% for post in site.publications reversed %}
+          {% include archive-single-publication.html %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </section>
+</div>
