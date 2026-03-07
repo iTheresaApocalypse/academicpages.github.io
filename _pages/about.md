@@ -10,9 +10,9 @@ redirect_from:
 <div id="about" class="home-section home-about">
   <h2><i class="fas fa-user-circle"></i> About Me</h2>
   <div class="home-about-content">
-    <p>I am a senior undergraduate student at <strong>Beijing Institute of Technology (BIT)</strong>, majoring in software engineering, while I am a coming PhD student from <strong>College AI of Tsinghua University</strong>.</p>
-    <p>My early research focused on <strong>data-centric AI</strong>, especially label noise and data selection. As vision-language models (VLMs) and reasoning models have grown impressively powerful, I've become deeply interested in the study of <strong>visual agents</strong>, especially utilizing VLMs in game area. My goal is to design general intelligent agents outperforming humans across all tasks in cyberspace.</p>
-    <p>In life, I have a deep appreciation for (e)sports, AAA game, music, novel and animation. I got a master degree in League of Legends. 🎮</p>
+    <p>I am a senior undergraduate student majoring in Software Engineering at <strong>Beijing Institute of Technology (BIT)</strong>, and an incoming Ph.D. student at the <strong>College of AI, Tsinghua University</strong>.</p>
+    <p>My research interests lie in <strong>data-centric AI</strong> and <strong>visual agents</strong>. Previously, I worked on label noise learning and data selection for LLM pretraining. Currently, I am focused on building intelligent <strong>visual game agents</strong> powered by vision-language models (VLMs), with the long-term goal of developing general-purpose agents that surpass human performance across digital environments.</p>
+    <p>Outside of research, I enjoy esports, AAA games, music, novels, and animation. Proud Master-tier League of Legends player. 🎮</p>
   </div>
   <div class="home-research-interests">
     <span class="interest-tag"><i class="fas fa-brain"></i> Data-Centric AI</span>
@@ -36,7 +36,7 @@ redirect_from:
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <span class="timeline-date">2022 – 2026 (expected)</span>
+        <span class="timeline-date">2022 – 2026</span>
         <h3>School of Computer Science and Technology, Beijing Institute of Technology</h3>
         <p>B.Eng. in Software Engineering</p>
       </div>
@@ -114,8 +114,7 @@ redirect_from:
       <h3 class="service-category-title"><i class="fas fa-search"></i> Conference Reviewer</h3>
       <div class="service-items">
         <div class="service-item">
-          <span class="service-badge">ICML</span>
-          <span class="service-name">International Conference on Machine Learning</span>
+          <span class="service-badge">ICML 2026</span>
         </div>
       </div>
     </div>
