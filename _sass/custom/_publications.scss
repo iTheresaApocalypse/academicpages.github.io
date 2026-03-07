@@ -1,17 +1,21 @@
 /* ==========================================================================
-   PUBLICATIONS PAGE (enjundu.com style)
+   PUBLICATIONS PAGE - Professional Academic Style
    ========================================================================== */
 
 .publications-page {
   .pub-page-intro {
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
     color: var(--global-text-color-light);
     font-size: 0.95em;
+    padding: 0.75em 1em;
+    background: var(--global-code-background-color);
+    border-left: 3px solid var(--global-link-color);
+    border-radius: 4px;
   }
 }
 
 .pub-section {
-  margin-bottom: 2.5em;
+  margin-bottom: 3em;
 
   &:last-child {
     margin-bottom: 0;
@@ -20,138 +24,240 @@
 
 .pub-section__title {
   margin-top: 0;
-  margin-bottom: 1rem;
-  padding-bottom: 0.4em;
-  font-size: 1.25rem;
-  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5em;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: var(--global-text-color);
-  border-bottom: 1px solid var(--global-border-color);
+  border-bottom: 2px solid var(--global-link-color);
+  letter-spacing: -0.02em;
 }
 
 .pub-list {
   .list__item {
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
   }
 }
 
-/* Publication item (card-like block) */
+/* Publication item - Professional card design */
 .archive__item--publication {
-  padding: 0;
+  position: relative;
+  padding: 1.5em;
   margin-bottom: 0;
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-border-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: var(--global-link-color);
+    transform: translateY(-2px);
+  }
+
+  /* Year badge - positioned at top right */
+  .pub-year {
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--global-text-color-light);
+    background: var(--global-code-background-color);
+    padding: 0.3em 0.7em;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  /* Badge container */
+  .pub-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-bottom: 0.75em;
+    align-items: center;
+  }
 
   .pub-tag,
   .pub-venue-badge {
     display: inline-block;
-    margin-right: 0.5em;
-    margin-bottom: 0.35em;
-    padding: 0.2em 0.6em;
+    padding: 0.35em 0.75em;
     font-size: 0.75rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.4;
-    border-radius: 4px;
+    border-radius: 6px;
     vertical-align: middle;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
   }
 
   .pub-tag {
     color: var(--global-link-color);
-    background: rgba(82, 173, 200, 0.12);
-    border: 1px solid rgba(82, 173, 200, 0.35);
+    background: rgba(82, 173, 200, 0.15);
+    border: 1px solid rgba(82, 173, 200, 0.3);
   }
 
   .pub-venue-badge {
-    color: var(--global-text-color-light);
-    background: var(--global-code-background-color);
-    border: 1px solid var(--global-border-color);
+    color: #fff;
+    background: linear-gradient(135deg, var(--global-link-color) 0%, var(--global-link-color-hover) 100%);
+    border: none;
+    box-shadow: 0 2px 4px rgba(82, 173, 200, 0.2);
   }
 
   .archive__item-title--pub {
-    margin-top: 0.25em;
-    margin-bottom: 0.35em;
-    font-size: 1.1rem;
-    line-height: 1.4;
+    margin-top: 0.5em;
+    margin-bottom: 0.6em;
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--global-text-color);
 
     a {
+      color: var(--global-text-color);
       text-decoration: none;
+      transition: color 0.2s ease;
 
       &:hover {
-        text-decoration: underline;
+        color: var(--global-link-color);
+        text-decoration: none;
       }
     }
 
     .pub-permalink {
-      margin-left: 0.25em;
-      font-size: 0.85em;
-      opacity: 0.6;
+      margin-left: 0.5em;
+      font-size: 0.75em;
+      opacity: 0.5;
+      color: var(--global-text-color-light);
+      transition: opacity 0.2s ease;
 
       &:hover {
         opacity: 1;
+        color: var(--global-link-color);
       }
     }
   }
 
   .pub-authors {
-    margin: 0 0 0.4em;
-    font-size: 0.9rem;
+    margin: 0 0 0.6em;
+    font-size: 0.95rem;
     color: var(--global-text-color-light);
-    line-height: 1.5;
+    line-height: 1.6;
+    font-style: italic;
   }
 
   .pub-excerpt {
-    margin-top: 0.25em;
-    margin-bottom: 0.5em;
-    font-size: 0.88rem;
+    margin-top: 0.5em;
+    margin-bottom: 0.75em;
+    font-size: 0.9rem;
     color: var(--global-text-color-light);
-    line-height: 1.5;
+    line-height: 1.7;
   }
 
   .pub-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5em 1em;
-    margin-top: 0.5em;
+    gap: 0.6em;
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid var(--global-border-color);
   }
 
   .pub-link {
-    display: inline-block;
-    padding: 0.25em 0.6em;
-    font-size: 0.8rem;
-    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    padding: 0.5em 1em;
+    font-size: 0.85rem;
+    font-weight: 600;
     color: var(--global-link-color);
     text-decoration: none;
     background: transparent;
-    border: 1px solid var(--global-border-color);
-    border-radius: 4px;
-    transition: $global-transition;
+    border: 1.5px solid var(--global-border-color);
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+
+    i {
+      font-size: 0.9em;
+      opacity: 0.9;
+    }
 
     &:hover {
       color: var(--global-link-color-hover);
       background: var(--global-code-background-color);
-      border-color: var(--global-dark-border-color);
+      border-color: var(--global-link-color);
+      transform: translateY(-1px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      i {
+        opacity: 1;
+      }
     }
 
     &--pdf {
-      color: var(--global-bg-color);
-      background: var(--global-link-color);
-      border-color: var(--global-link-color);
+      color: #fff;
+      background: linear-gradient(135deg, #d32f2f 0%, #c62828 100%);
+      border-color: #d32f2f;
+      box-shadow: 0 2px 4px rgba(211, 47, 47, 0.3);
+
+      i {
+        opacity: 1;
+      }
 
       &:hover {
-        background: var(--global-link-color-hover);
-        border-color: var(--global-link-color-hover);
+        color: #fff;
+        background: linear-gradient(135deg, #c62828 0%, #b71c1c 100%);
+        border-color: #c62828;
+        box-shadow: 0 4px 8px rgba(211, 47, 47, 0.4);
       }
     }
   }
 }
 
-/* Featured section: slightly more prominent */
+/* Featured section: enhanced prominence */
 .pub-list--featured .archive__item--publication {
-  padding: 1rem 0;
-  border-bottom: 1px solid var(--global-border-color);
+  background: linear-gradient(135deg, rgba(82, 173, 200, 0.03) 0%, rgba(82, 173, 200, 0.08) 100%);
+  border: 2px solid var(--global-link-color);
+  box-shadow: 0 4px 12px rgba(82, 173, 200, 0.15);
 
-  &:last-child {
-    border-bottom: none;
+  &:hover {
+    box-shadow: 0 6px 20px rgba(82, 173, 200, 0.25);
   }
 
   .archive__item-title--pub {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  &::before {
+    content: "⭐";
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    font-size: 1.2em;
+    opacity: 0.6;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .archive__item--publication {
+    padding: 1.2em;
+
+    .pub-year {
+      position: static;
+      display: inline-block;
+      margin-bottom: 0.5em;
+    }
+
+    .archive__item-title--pub {
+      font-size: 1.05rem;
+    }
+
+    .pub-links {
+      gap: 0.5em;
+    }
   }
 }

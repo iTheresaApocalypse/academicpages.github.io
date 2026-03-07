@@ -6,19 +6,36 @@
   {% assign title = post.title %}
 {% endif %}
 
+{% comment %} Extract year from date {% endcomment %}
+{% if post.date %}
+  {% assign pub_year = post.date | date: "%Y" %}
+{% elsif post.year %}
+  {% assign pub_year = post.year %}
+{% else %}
+  {% assign pub_year = nil %}
+{% endif %}
+
 <div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item archive__item--publication" itemscope itemtype="http://schema.org/CreativeWork">
-    {% comment %} Category / Tag badge (e.g. "Data-Centric AI", "Conference Papers") {% endcomment %}
-    {% if post.tag or post.pub_tag %}
-      <span class="pub-tag">{{ post.tag | default: post.pub_tag }}</span>
-    {% elsif post.collection == 'publications' and post.category and site.publication_category[post.category] %}
-      <span class="pub-tag">{{ site.publication_category[post.category].title }}</span>
+    {% comment %} Year badge {% endcomment %}
+    {% if pub_year %}
+      <span class="pub-year">{{ pub_year }}</span>
     {% endif %}
 
-    {% comment %} Venue badge (e.g. "NeurIPS 2025 Poster", "ICLR 2025 Spotlight") {% endcomment %}
-    {% if post.venue %}
-      <span class="pub-venue-badge">{{ post.venue }}</span>
-    {% endif %}
+    {% comment %} Badge container for category/tag and venue {% endcomment %}
+    <div class="pub-badges">
+      {% comment %} Category / Tag badge (e.g. "Data-Centric AI", "Conference Papers") {% endcomment %}
+      {% if post.tag or post.pub_tag %}
+        <span class="pub-tag">{{ post.tag | default: post.pub_tag }}</span>
+      {% elsif post.collection == 'publications' and post.category and site.publication_category[post.category] %}
+        <span class="pub-tag">{{ site.publication_category[post.category].title }}</span>
+      {% endif %}
+
+      {% comment %} Venue badge (e.g. "NeurIPS 2025 Poster", "ICLR 2025 Spotlight") {% endcomment %}
+      {% if post.venue %}
+        <span class="pub-venue-badge">{{ post.venue }}</span>
+      {% endif %}
+    </div>
 
     <h2 class="archive__item-title archive__item-title--pub" itemprop="headline">
       {% if post.link %}
@@ -30,7 +47,7 @@
     </h2>
 
     {% if post.authors or post.citation %}
-      <p class="pub-authors">
+      <p class="pub-authors" itemprop="author">
         {% if post.authors %}
           {{ post.authors }}
         {% elsif post.citation %}
@@ -40,7 +57,7 @@
     {% endif %}
 
     {% if post.excerpt and include.show_excerpt != false %}
-      <p class="archive__item-excerpt pub-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 240 }}</p>
+      <p class="archive__item-excerpt pub-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 300 }}</p>
     {% endif %}
 
     {% comment %} Link buttons: PDF, Code, Dataset, Project, Poster, Slides, Video, BibTeX {% endcomment %}
@@ -51,18 +68,60 @@
     {% if has_links %}
       <div class="pub-links">
         {% if post.paperurl %}
-          <a href="{{ post.paperurl }}" class="pub-link pub-link--pdf" target="_blank" rel="noopener">PDF</a>
+          <a href="{{ post.paperurl }}" class="pub-link pub-link--pdf" target="_blank" rel="noopener" aria-label="Download PDF">
+            <i class="fas fa-file-pdf" aria-hidden="true"></i> PDF
+          </a>
         {% endif %}
-        {% if post.codeurl %}<a href="{{ post.codeurl }}" class="pub-link" target="_blank" rel="noopener">Code</a>{% endif %}
-        {% if post.code %}<a href="{{ post.code }}" class="pub-link" target="_blank" rel="noopener">Code</a>{% endif %}
-        {% if post.dataseturl %}<a href="{{ post.dataseturl }}" class="pub-link" target="_blank" rel="noopener">Dataset</a>{% endif %}
-        {% if post.dataset %}<a href="{{ post.dataset }}" class="pub-link" target="_blank" rel="noopener">Dataset</a>{% endif %}
-        {% if post.projecturl %}<a href="{{ post.projecturl }}" class="pub-link" target="_blank" rel="noopener">Project</a>{% endif %}
-        {% if post.project %}<a href="{{ post.project }}" class="pub-link" target="_blank" rel="noopener">Project</a>{% endif %}
-        {% if post.slidesurl %}<a href="{{ post.slidesurl }}" class="pub-link" target="_blank" rel="noopener">Slides</a>{% endif %}
-        {% if post.videourl %}<a href="{{ post.videourl }}" class="pub-link" target="_blank" rel="noopener">Video</a>{% endif %}
-        {% if post.video %}<a href="{{ post.video }}" class="pub-link" target="_blank" rel="noopener">Video</a>{% endif %}
-        {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" class="pub-link" target="_blank" rel="noopener">BibTeX</a>{% endif %}
+        {% if post.codeurl %}
+          <a href="{{ post.codeurl }}" class="pub-link" target="_blank" rel="noopener" aria-label="View Code">
+            <i class="fab fa-github" aria-hidden="true"></i> Code
+          </a>
+        {% endif %}
+        {% if post.code %}
+          <a href="{{ post.code }}" class="pub-link" target="_blank" rel="noopener" aria-label="View Code">
+            <i class="fab fa-github" aria-hidden="true"></i> Code
+          </a>
+        {% endif %}
+        {% if post.dataseturl %}
+          <a href="{{ post.dataseturl }}" class="pub-link" target="_blank" rel="noopener" aria-label="View Dataset">
+            <i class="fas fa-database" aria-hidden="true"></i> Dataset
+          </a>
+        {% endif %}
+        {% if post.dataset %}
+          <a href="{{ post.dataset }}" class="pub-link" target="_blank" rel="noopener" aria-label="View Dataset">
+            <i class="fas fa-database" aria-hidden="true"></i> Dataset
+          </a>
+        {% endif %}
+        {% if post.projecturl %}
+          <a href="{{ post.projecturl }}" class="pub-link" target="_blank" rel="noopener" aria-label="View Project">
+            <i class="fas fa-external-link-alt" aria-hidden="true"></i> Project
+          </a>
+        {% endif %}
+        {% if post.project %}
+          <a href="{{ post.project }}" class="pub-link" target="_blank" rel="noopener" aria-label="View Project">
+            <i class="fas fa-external-link-alt" aria-hidden="true"></i> Project
+          </a>
+        {% endif %}
+        {% if post.slidesurl %}
+          <a href="{{ post.slidesurl }}" class="pub-link" target="_blank" rel="noopener" aria-label="View Slides">
+            <i class="fas fa-file-powerpoint" aria-hidden="true"></i> Slides
+          </a>
+        {% endif %}
+        {% if post.videourl %}
+          <a href="{{ post.videourl }}" class="pub-link" target="_blank" rel="noopener" aria-label="Watch Video">
+            <i class="fas fa-video" aria-hidden="true"></i> Video
+          </a>
+        {% endif %}
+        {% if post.video %}
+          <a href="{{ post.video }}" class="pub-link" target="_blank" rel="noopener" aria-label="Watch Video">
+            <i class="fas fa-video" aria-hidden="true"></i> Video
+          </a>
+        {% endif %}
+        {% if post.bibtexurl %}
+          <a href="{{ post.bibtexurl }}" class="pub-link" target="_blank" rel="noopener" aria-label="View BibTeX">
+            <i class="fas fa-quote-right" aria-hidden="true"></i> BibTeX
+          </a>
+        {% endif %}
       </div>
     {% endif %}
   </article>
