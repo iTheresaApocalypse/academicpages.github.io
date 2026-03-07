@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-<div class="home-section home-about">
+<div id="about" class="home-section home-about">
   <h2><i class="fas fa-user-circle"></i> About Me</h2>
   <div class="home-about-content">
     <p>I am a senior undergraduate student at <strong>Beijing Institute of Technology (BIT)</strong>, majoring in software engineering, while I am a coming PhD student from <strong>College AI of Tsinghua University</strong>.</p>
@@ -22,7 +22,7 @@ redirect_from:
   </div>
 </div>
 
-<div class="home-section home-experience">
+<div id="experience" class="home-section home-experience">
   <h2><i class="fas fa-graduation-cap"></i> Academic Experience</h2>
   <div class="timeline">
     <div class="timeline-item">
@@ -52,7 +52,7 @@ redirect_from:
   </div>
 </div>
 
-<div class="home-section home-publications">
+<div id="publications" class="home-section home-publications">
   <h2><i class="fas fa-file-alt"></i> Publications</h2>
   <p class="home-section-subtitle">* denotes equal contribution, † denotes corresponding author</p>
 
@@ -107,7 +107,22 @@ redirect_from:
   </div>
 </div>
 
-<div class="home-section home-awards">
+<div id="service" class="home-section home-service">
+  <h2><i class="fas fa-hands-helping"></i> Academic Service</h2>
+  <div class="service-list">
+    <div class="service-category">
+      <h3 class="service-category-title"><i class="fas fa-search"></i> Conference Reviewer</h3>
+      <div class="service-items">
+        <div class="service-item">
+          <span class="service-badge">ICML</span>
+          <span class="service-name">International Conference on Machine Learning</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="awards" class="home-section home-awards">
   <h2><i class="fas fa-trophy"></i> Selected Awards</h2>
   <div class="awards-list">
     <div class="award-item">
