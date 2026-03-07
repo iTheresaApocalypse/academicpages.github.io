@@ -261,3 +261,166 @@
     }
   }
 }
+
+
+/* ==========================================================================
+   HOMEPAGE PUBLICATION CARDS (used in about.md)
+   ========================================================================== */
+
+.home-pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-top: 1em;
+}
+
+.home-pub-card {
+  position: relative;
+  padding: 1.5em;
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-border-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    border-color: var(--global-link-color);
+    transform: translateY(-2px);
+  }
+}
+
+.home-pub-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75em;
+}
+
+.home-pub-venue {
+  display: inline-block;
+  padding: 0.35em 0.85em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #52adc8 0%, #3d8fa8 100%);
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(82, 173, 200, 0.25);
+}
+
+.home-pub-year {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--global-text-color-light);
+  background: var(--global-code-background-color);
+  padding: 0.3em 0.75em;
+  border-radius: 12px;
+  letter-spacing: 0.5px;
+}
+
+.home-pub-title {
+  margin: 0.5em 0 0.6em;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.5;
+
+  a {
+    color: var(--global-text-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--global-link-color);
+    }
+  }
+}
+
+.home-pub-authors {
+  margin: 0 0 0.5em;
+  font-size: 0.92rem;
+  color: var(--global-text-color-light);
+  line-height: 1.6;
+
+  strong {
+    color: var(--global-text-color);
+    font-weight: 600;
+  }
+}
+
+.home-pub-desc {
+  margin: 0 0 0.75em;
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.home-pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid var(--global-border-color);
+}
+
+.home-pub-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.5em 1em;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--global-link-color);
+  text-decoration: none;
+  background: transparent;
+  border: 1.5px solid var(--global-border-color);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  letter-spacing: 0.3px;
+
+  i {
+    font-size: 0.9em;
+  }
+
+  &:hover {
+    color: var(--global-link-color-hover);
+    background: var(--global-code-background-color);
+    border-color: var(--global-link-color);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  &--pdf {
+    color: #fff;
+    background: linear-gradient(135deg, #d32f2f 0%, #c62828 100%);
+    border-color: #d32f2f;
+    box-shadow: 0 2px 4px rgba(211, 47, 47, 0.3);
+
+    &:hover {
+      color: #fff;
+      background: linear-gradient(135deg, #c62828 0%, #b71c1c 100%);
+      border-color: #c62828;
+      box-shadow: 0 4px 8px rgba(211, 47, 47, 0.4);
+    }
+  }
+}
+
+/* Responsive for homepage cards */
+@media (max-width: 768px) {
+  .home-pub-card {
+    padding: 1.2em;
+  }
+
+  .home-pub-title {
+    font-size: 1.05rem;
+  }
+
+  .home-pub-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+}

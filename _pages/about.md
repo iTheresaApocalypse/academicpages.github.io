@@ -21,27 +21,41 @@ In life, I have a deep appreciation for (e)sports, AAA game, music, novel and am
 * _2022 - 2026(expected)_, School of Computer Science and Technology, Beijing Institute of Technology
 * _2019 - 2022_, Chengdu No.7 High School
 
-📝 Publications
-------
-**Handling Label Noise via Instance-Level Difficulty Modeling and Dynamic Optimization**
+<h2>📝 Publications</h2>
 
-* NeurIPS 2025 Poster
-   
-* **Kuan Zhang**, Chengliang Chai, Jingzhe Xu, Chi Zhang, Han Han, Ye Yuan, Guoren Wang, Lei Cao
+<div class="home-pub-list">
 
-* An efficient, hyperparameter-free, instance-level optimization framework for label noise in image classification.
+<div class="home-pub-card">
+  <div class="home-pub-header">
+    <span class="home-pub-venue">NeurIPS 2025 Poster</span>
+    <span class="home-pub-year">2025</span>
+  </div>
+  <h3 class="home-pub-title">
+    <a href="https://arxiv.org/abs/2505.00812">Handling Label Noise via Instance-Level Difficulty Modeling and Dynamic Optimization</a>
+  </h3>
+  <p class="home-pub-authors"><strong>Kuan Zhang</strong>, Chengliang Chai, Jingzhe Xu, Chi Zhang, Han Han, Ye Yuan, Guoren Wang, Lei Cao</p>
+  <p class="home-pub-desc">An efficient, hyperparameter-free, instance-level optimization framework for label noise in image classification.</p>
+  <div class="home-pub-links">
+    <a href="https://arxiv.org/abs/2505.00812" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+  </div>
+</div>
 
-* [Paper Link](https://arxiv.org/abs/2505.00812)
+<div class="home-pub-card">
+  <div class="home-pub-header">
+    <span class="home-pub-venue">ICLR 2025 Spotlight</span>
+    <span class="home-pub-year">2025</span>
+  </div>
+  <h3 class="home-pub-title">
+    <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html">Harnessing Diversity for Important Data Selection in Pretraining Large Language Models</a>
+  </h3>
+  <p class="home-pub-authors">Chi Zhang, Huaping Zhong, <strong>Kuan Zhang</strong>, Chengliang Chai, Rui Wang, Xinlin Zhuang, Tianyi Bai, Qiu Jiantao, Lei Cao, Ju Fan, Ye Yuan, Guoren Wang, Conghui He</p>
+  <p class="home-pub-desc">Combine multi-arm bandit with influence function to select data for pretraining process of large language models.</p>
+  <div class="home-pub-links">
+    <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+  </div>
+</div>
 
-**Harnessing Diversity for Important Data Selection in Pretraining Large Language Models**
-
-* ICLR 2025 Spotlight
-   
-* Chi Zhang, Huaping Zhong, **Kuan Zhang**, Chengliang Chai, Rui Wang, Xinlin Zhuang, Tianyi Bai, Qiu Jiantao, Lei Cao, Ju Fan, Ye Yuan, Guoren Wang, Conghui He
-
-* Combine multi-arm bandit with influence function to select data for pretraining process of large language models.
-
-* [Paper Link](https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html)
+</div>
 
 🏆 Selected Awards
 ------
