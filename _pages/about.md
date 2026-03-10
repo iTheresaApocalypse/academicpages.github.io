@@ -88,70 +88,58 @@ redirect_from:
   <div class="home-pub-list">
 
     <div class="home-pub-card home-pub-card--new">
-      <div class="home-pub-inner">
-        <div class="home-pub-figure">
-          <img src="{{ site.baseurl }}/images/gameverse.png" alt="GameVerse Paper Figure">
-        </div>
-        <div class="home-pub-body">
-          <div class="home-pub-header">
-            <span class="home-pub-venue home-pub-venue--preprint">Preprint 2026</span>
-            <span class="home-pub-year">2026</span>
-          </div>
-          <h3 class="home-pub-title">
-            <a href="https://arxiv.org/abs/2603.06656">GameVerse: Can Vision-Language Models Learn from Video-based Reflection?</a>
-          </h3>
-          <p class="home-pub-authors"><strong>Kuan Zhang</strong>*, Dongchen Liu*, Qiyue Zhao, Jinkun Hou, Xinran Zhang, Qinlei Xie, Miao Liu†, Yiming Li†</p>
-          <p class="home-pub-desc">A comprehensive video game benchmark enabling a reflective visual interaction loop for VLMs, with cognitive hierarchical taxonomy spanning 15 globally popular games, dual action space, and milestone evaluation.</p>
-          <div class="home-pub-links">
-            <a href="https://arxiv.org/abs/2603.06656" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
-            <a href="https://gameverse-bench.github.io" class="home-pub-link home-pub-link--project" target="_blank"><i class="fas fa-globe"></i> Project</a>
-            <a href="https://github.com/THUSI-Lab/GameVerse" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
-          </div>
-        </div>
+      <div class="home-pub-header">
+        <span class="home-pub-venue home-pub-venue--preprint">Preprint 2026</span>
+        <span class="home-pub-year">2026</span>
+      </div>
+      <h3 class="home-pub-title">
+        <a href="https://arxiv.org/abs/2603.06656">GameVerse: Can Vision-Language Models Learn from Video-based Reflection?</a>
+      </h3>
+      <p class="home-pub-authors"><strong>Kuan Zhang</strong>*, Dongchen Liu*, Qiyue Zhao, Jinkun Hou, Xinran Zhang, Qinlei Xie, Miao Liu†, Yiming Li†</p>
+      <div class="home-pub-figure">
+        <img src="{{ site.baseurl }}/images/gameverse.png" alt="GameVerse Paper Figure">
+      </div>
+      <p class="home-pub-desc">A comprehensive video game benchmark enabling a reflective visual interaction loop for VLMs, with cognitive hierarchical taxonomy spanning 15 globally popular games, dual action space, and milestone evaluation.</p>
+      <div class="home-pub-links">
+        <a href="https://arxiv.org/abs/2603.06656" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+        <a href="https://gameverse-bench.github.io" class="home-pub-link home-pub-link--project" target="_blank"><i class="fas fa-globe"></i> Project</a>
+        <a href="https://github.com/THUSI-Lab/GameVerse" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
       </div>
     </div>
 
     <div class="home-pub-card">
-      <div class="home-pub-inner">
-        <div class="home-pub-figure">
-          <img src="{{ site.baseurl }}/images/noisy-label.png" alt="Label Noise Paper Figure">
-        </div>
-        <div class="home-pub-body">
-          <div class="home-pub-header">
-            <span class="home-pub-venue">NeurIPS 2025 Poster</span>
-            <span class="home-pub-year">2025</span>
-          </div>
-          <h3 class="home-pub-title">
-            <a href="https://arxiv.org/abs/2505.00812">Handling Label Noise via Instance-Level Difficulty Modeling and Dynamic Optimization</a>
-          </h3>
-          <p class="home-pub-authors"><strong>Kuan Zhang</strong>, Chengliang Chai, Jingzhe Xu, Chi Zhang, Han Han, Ye Yuan, Guoren Wang, Lei Cao</p>
-          <p class="home-pub-desc">An efficient, hyperparameter-free, instance-level optimization framework for label noise in image classification.</p>
-          <div class="home-pub-links">
-            <a href="https://arxiv.org/abs/2505.00812" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
-          </div>
-        </div>
+      <div class="home-pub-header">
+        <span class="home-pub-venue">NeurIPS 2025 Poster</span>
+        <span class="home-pub-year">2025</span>
+      </div>
+      <h3 class="home-pub-title">
+        <a href="https://arxiv.org/abs/2505.00812">Handling Label Noise via Instance-Level Difficulty Modeling and Dynamic Optimization</a>
+      </h3>
+      <p class="home-pub-authors"><strong>Kuan Zhang</strong>, Chengliang Chai, Jingzhe Xu, Chi Zhang, Han Han, Ye Yuan, Guoren Wang, Lei Cao</p>
+      <div class="home-pub-figure">
+        <img src="{{ site.baseurl }}/images/noisy-label.png" alt="Label Noise Paper Figure">
+      </div>
+      <p class="home-pub-desc">An efficient, hyperparameter-free, instance-level optimization framework for label noise in image classification.</p>
+      <div class="home-pub-links">
+        <a href="https://arxiv.org/abs/2505.00812" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
       </div>
     </div>
 
     <div class="home-pub-card">
-      <div class="home-pub-inner">
-        <div class="home-pub-figure">
-          <img src="{{ site.baseurl }}/images/harnessing.png" alt="Harnessing Diversity Paper Figure">
-        </div>
-        <div class="home-pub-body">
-          <div class="home-pub-header">
-            <span class="home-pub-venue">ICLR 2025 Spotlight</span>
-            <span class="home-pub-year">2025</span>
-          </div>
-          <h3 class="home-pub-title">
-            <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html">Harnessing Diversity for Important Data Selection in Pretraining Large Language Models</a>
-          </h3>
-          <p class="home-pub-authors">Chi Zhang, Huaping Zhong, <strong>Kuan Zhang</strong>, Chengliang Chai, Rui Wang, Xinlin Zhuang, Tianyi Bai, Qiu Jiantao, Lei Cao, Ju Fan, Ye Yuan, Guoren Wang, Conghui He</p>
-          <p class="home-pub-desc">Combine multi-arm bandit with influence function to select data for pretraining process of large language models.</p>
-          <div class="home-pub-links">
-            <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
-          </div>
-        </div>
+      <div class="home-pub-header">
+        <span class="home-pub-venue">ICLR 2025 Spotlight</span>
+        <span class="home-pub-year">2025</span>
+      </div>
+      <h3 class="home-pub-title">
+        <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html">Harnessing Diversity for Important Data Selection in Pretraining Large Language Models</a>
+      </h3>
+      <p class="home-pub-authors">Chi Zhang, Huaping Zhong, <strong>Kuan Zhang</strong>, Chengliang Chai, Rui Wang, Xinlin Zhuang, Tianyi Bai, Qiu Jiantao, Lei Cao, Ju Fan, Ye Yuan, Guoren Wang, Conghui He</p>
+      <div class="home-pub-figure">
+        <img src="{{ site.baseurl }}/images/harnessing.png" alt="Harnessing Diversity Paper Figure">
+      </div>
+      <p class="home-pub-desc">Combine multi-arm bandit with influence function to select data for pretraining process of large language models.</p>
+      <div class="home-pub-links">
+        <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
       </div>
     </div>
 

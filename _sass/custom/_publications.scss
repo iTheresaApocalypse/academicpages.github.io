@@ -241,34 +241,21 @@
   }
 }
 
-/* pub card inner: figure + body */
-.home-pub-inner {
-  display: flex;
-  gap: 1.4em;
-  align-items: stretch;
-}
-
+/* pub card figure – full-width between authors and description */
 .home-pub-figure {
-  flex-shrink: 0;
-  width: 250px;
-  display: flex;
-  align-items: center;
+  display: block;
+  margin: 0.6em 0 0.7em;
 
   img {
     width: 100%;
-    height: 160px;
+    max-height: 220px;
     object-fit: contain;
     background: var(--global-code-background-color);
     border-radius: 8px;
     border: 1px solid var(--global-border-color);
     display: block;
-    padding: 6px;
+    padding: 8px;
   }
-}
-
-.home-pub-body {
-  flex: 1;
-  min-width: 0;
 }
 
 .home-pub-header {
@@ -610,16 +597,8 @@
   }
 
   /* pub cards on mobile */
-  .home-pub-inner {
-    flex-direction: column;
-  }
-
-  .home-pub-figure {
-    width: 100%;
-
-    img {
-      height: 180px;
-    }
+  .home-pub-figure img {
+    max-height: 160px;
   }
 
   .home-pub-card {
