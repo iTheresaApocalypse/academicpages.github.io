@@ -60,15 +60,16 @@ redirect_from:
 
     <div class="home-pub-card home-pub-card--new">
       <div class="home-pub-header">
-        <span class="home-pub-venue home-pub-venue--preprint">Preprint 2025</span>
-        <span class="home-pub-year">2025</span>
+        <span class="home-pub-venue home-pub-venue--preprint">Preprint 2026</span>
+        <span class="home-pub-year">2026</span>
       </div>
       <h3 class="home-pub-title">
-        <a href="https://gameverse-bench.github.io">GameVerse: Can Vision-Language Models Learn from Video-based Reflection?</a>
+        <a href="https://arxiv.org/abs/2603.06656">GameVerse: Can Vision-Language Models Learn from Video-based Reflection?</a>
       </h3>
       <p class="home-pub-authors"><strong>Kuan Zhang</strong>*, Dongchen Liu*, Qiyue Zhao, Jinkun Hou, Xinran Zhang, Qinlei Xie, Miao Liu†, Yiming Li†</p>
       <p class="home-pub-desc">A comprehensive video game benchmark enabling reflective visual interaction loop for VLMs, with cognitive hierarchical taxonomy spanning 15 globally popular games, dual action space, and milestone evaluation.</p>
       <div class="home-pub-links">
+        <a href="https://arxiv.org/abs/2603.06656" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
         <a href="https://gameverse-bench.github.io" class="home-pub-link home-pub-link--project" target="_blank"><i class="fas fa-globe"></i> Project</a>
         <a href="https://github.com/THUSI-Lab/GameVerse" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
       </div>
