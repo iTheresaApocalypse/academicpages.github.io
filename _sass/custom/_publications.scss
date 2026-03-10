@@ -113,35 +113,22 @@
 
 .exp-logo {
   flex-shrink: 0;
-  width: 52px;
-  height: 52px;
+  width: 54px;
+  height: 54px;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.85rem;
-  font-weight: 900;
-  color: #fff;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+  background: #fff;
+  border: 1px solid var(--global-border-color);
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 
-  &--mihoyo {
-    background: linear-gradient(135deg, #1a1a2e 0%, #2d2b55 100%);
-    font-size: 0.78rem;
-    letter-spacing: 0.3px;
-    box-shadow: 0 2px 8px rgba(26, 26, 46, 0.35);
-  }
-
-  &--thu {
-    background: linear-gradient(135deg, #6B0D23 0%, #9B1B2C 100%);
-    font-size: 0.78rem;
-    box-shadow: 0 2px 8px rgba(107, 13, 35, 0.35);
-  }
-
-  &--bit {
-    background: linear-gradient(135deg, #003087 0%, #0055b3 100%);
-    font-size: 0.8rem;
-    box-shadow: 0 2px 8px rgba(0, 48, 135, 0.3);
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 5px;
   }
 }
 
@@ -243,21 +230,25 @@
 /* pub card inner: figure + body */
 .home-pub-inner {
   display: flex;
-  gap: 1.2em;
-  align-items: flex-start;
+  gap: 1.3em;
+  align-items: stretch;
 }
 
 .home-pub-figure {
   flex-shrink: 0;
-  width: 190px;
+  width: 210px;
+  display: flex;
+  align-items: center;
 
   img {
     width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 6px;
+    height: 150px;
+    object-fit: contain;
+    background: var(--global-code-background-color);
+    border-radius: 8px;
     border: 1px solid var(--global-border-color);
     display: block;
+    padding: 6px;
   }
 }
 
@@ -575,7 +566,6 @@
     width: 44px;
     height: 44px;
     border-radius: 10px;
-    font-size: 0.72rem;
   }
 
   .exp-header {
@@ -597,7 +587,7 @@
     width: 100%;
 
     img {
-      height: 150px;
+      height: 180px;
     }
   }
 

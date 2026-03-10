@@ -27,7 +27,9 @@ redirect_from:
   <div class="exp-list">
 
     <div class="exp-card">
-      <div class="exp-logo exp-logo--mihoyo">HY</div>
+      <div class="exp-logo">
+        <img src="{{ site.baseurl }}/images/logo-mihoyo.png" alt="miHoYo">
+      </div>
       <div class="exp-content">
         <div class="exp-header">
           <h3 class="exp-org">miHoYo (HoYoverse)</h3>
@@ -38,7 +40,9 @@ redirect_from:
     </div>
 
     <div class="exp-card">
-      <div class="exp-logo exp-logo--thu">THU</div>
+      <div class="exp-logo">
+        <img src="{{ site.baseurl }}/images/logo-thu.png" alt="Tsinghua University">
+      </div>
       <div class="exp-content">
         <div class="exp-header">
           <h3 class="exp-org">Tsinghua University</h3>
@@ -49,13 +53,28 @@ redirect_from:
     </div>
 
     <div class="exp-card">
-      <div class="exp-logo exp-logo--bit">BIT</div>
+      <div class="exp-logo">
+        <img src="{{ site.baseurl }}/images/logo-bit.png" alt="Beijing Institute of Technology">
+      </div>
       <div class="exp-content">
         <div class="exp-header">
           <h3 class="exp-org">Beijing Institute of Technology</h3>
           <span class="exp-date">2022 – 2026</span>
         </div>
         <p class="exp-role">B.Eng. in Software Engineering &nbsp;·&nbsp; <a href="https://github.com/BIT-DataLab" target="_blank">Intern in BIT-DataLab</a></p>
+      </div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-logo">
+        <img src="{{ site.baseurl }}/images/logo-cd7.png" alt="Chengdu No.7 High School">
+      </div>
+      <div class="exp-content">
+        <div class="exp-header">
+          <h3 class="exp-org">Chengdu No.7 High School</h3>
+          <span class="exp-date">2019 – 2022</span>
+        </div>
+        <p class="exp-role">High School</p>
       </div>
     </div>
 
@@ -70,6 +89,9 @@ redirect_from:
 
     <div class="home-pub-card home-pub-card--new">
       <div class="home-pub-inner">
+        <div class="home-pub-figure">
+          <img src="{{ site.baseurl }}/images/gameverse.png" alt="GameVerse Paper Figure">
+        </div>
         <div class="home-pub-body">
           <div class="home-pub-header">
             <span class="home-pub-venue home-pub-venue--preprint">Preprint 2026</span>
