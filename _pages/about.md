@@ -133,7 +133,7 @@ redirect_from:
       <h3 class="home-pub-title">
         <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html">Harnessing Diversity for Important Data Selection in Pretraining Large Language Models</a>
       </h3>
-      <p class="home-pub-authors">Chi Zhang, Huaping Zhong, <strong>Kuan Zhang</strong>, Chengliang Chai, Rui Wang, Xinlin Zhuang, Tianyi Bai, Qiu Jiantao, Lei Cao, Ju Fan, Ye Yuan, Guoren Wang, Conghui He</p>
+      <p class="home-pub-authors">Chi Zhang*, Huaping Zhong*, <strong>Kuan Zhang</strong>, Chengliang Chai, Rui Wang, Xinlin Zhuang, Tianyi Bai, Qiu Jiantao, Lei Cao, Ju Fan, Ye Yuan, Guoren Wang, Conghui He</p>
       <div class="home-pub-figure">
         <img src="{{ site.baseurl }}/images/harnessing.png" alt="Harnessing Diversity Paper Figure">
       </div>
