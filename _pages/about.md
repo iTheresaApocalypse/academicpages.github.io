@@ -89,7 +89,7 @@ redirect_from:
 
     <div class="home-pub-card home-pub-card--new">
       <div class="home-pub-header">
-        <span class="home-pub-venue home-pub-venue--preprint">Preprint 2026</span>
+        <span class="home-pub-venue">ICML 2026</span>
         <span class="home-pub-year">2026</span>
       </div>
       <h3 class="home-pub-title">
@@ -163,6 +163,13 @@ redirect_from:
 <div id="awards" class="home-section home-awards">
   <h2><i class="fas fa-trophy"></i> Selected Awards</h2>
   <div class="awards-list">
+    <div class="award-item">
+      <span class="award-year">2026</span>
+      <div class="award-info">
+        <strong>Teli Xu Scholarship</strong>
+        <span class="award-note">Highest scholarship at Beijing Institute of Technology (awarded to 10 undergraduates each year)</span>
+      </div>
+    </div>
     <div class="award-item">
       <span class="award-year">2023 / 2024</span>
       <div class="award-info">
