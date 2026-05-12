@@ -14,8 +14,8 @@ title_separator          : "-"
 name                     : &name "Kuan Zhang (张宽)"
 description              : &description "personal description"
 url                      : https://itheresaapocalypse.github.io # the base hostname & protocol for your site e.g. "https://itheresaapocalypse.github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # user site at domain root; use "/repo-name" only for project pages
-repository               : "iTheresaApocalypse/iTheresaApocalypse.github.io"
+baseurl                  : /academicpages.github.io # project pages under this repo name
+repository               : "iTheresaApocalypse/academicpages.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
