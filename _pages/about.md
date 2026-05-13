@@ -89,6 +89,25 @@ redirect_from:
 
     <div class="home-pub-card home-pub-card--new">
       <div class="home-pub-header">
+        <span class="home-pub-venue home-pub-venue--preprint">arXiv 2026</span>
+        <span class="home-pub-year">2026</span>
+      </div>
+      <h3 class="home-pub-title">
+        <a href="https://arxiv.org/abs/2605.09965">Towards Generalist Game Players: An Investigation of Foundation Models in the Game Multiverse</a>
+      </h3>
+      <p class="home-pub-authors"><strong>Kuan Zhang</strong>*, Dongchen Liu*, Qiyue Zhao*, Tianyu Xin*, Yue Su*, Haisheng Wang, Han Yin, Hongbo Ma, Peize Li, Tianjun Gu, Xiangnan Wu, Xinran Zhang, Yongxuan Li, Zirong Chen, Yiming Li†</p>
+      <div class="home-pub-figure">
+        <img src="{{ site.baseurl }}/images/game-multiverse.png" alt="Game Multiverse Paper Figure">
+      </div>
+      <p class="home-pub-desc">A systematic survey tracing the full lifecycle of generalist game players across four interdependent pillars — Dataset, Model, Harness, and Benchmark — and charting a five-level roadmap from single-game mastery toward the ultimate creator stage in the game multiverse.</p>
+      <div class="home-pub-links">
+        <a href="https://arxiv.org/abs/2605.09965" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+        <a href="https://github.com/THUSI-Lab/Awesome-LFMs-Play-Games" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
+      </div>
+    </div>
+
+    <div class="home-pub-card home-pub-card--new">
+      <div class="home-pub-header">
         <span class="home-pub-venue">ICML 2026</span>
         <span class="home-pub-year">2026</span>
       </div>
