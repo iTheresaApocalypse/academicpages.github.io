@@ -85,9 +85,14 @@ redirect_from:
   <h2><i class="fas fa-file-alt"></i> Publications</h2>
   <p class="home-section-subtitle">* denotes equal contribution, † denotes corresponding author</p>
 
-  <div class="home-pub-list">
+  <div class="home-pub-section--filterable js-pub-filter-root">
+    <div class="pub-filter-bar" role="tablist" aria-label="Publication list filter">
+      <button type="button" class="pub-filter__btn pub-filter__btn--active" data-pub-filter="all" role="tab" aria-selected="true">All</button>
+      <button type="button" class="pub-filter__btn" data-pub-filter="selected" role="tab" aria-selected="false">Selected</button>
+    </div>
+    <div class="home-pub-list">
 
-    <div class="home-pub-card home-pub-card--new">
+    <div class="home-pub-card home-pub-card--new home-pub-card--first-author" data-first-author="true">
       <div class="home-pub-header">
         <span class="home-pub-venue home-pub-venue--preprint">arXiv 2026</span>
         <span class="home-pub-year">2026</span>
@@ -106,7 +111,7 @@ redirect_from:
       </div>
     </div>
 
-    <div class="home-pub-card home-pub-card--new">
+    <div class="home-pub-card home-pub-card--new home-pub-card--first-author" data-first-author="true">
       <div class="home-pub-header">
         <span class="home-pub-venue">ICML 2026</span>
         <span class="home-pub-year">2026</span>
@@ -126,7 +131,7 @@ redirect_from:
       </div>
     </div>
 
-    <div class="home-pub-card">
+    <div class="home-pub-card home-pub-card--first-author" data-first-author="true">
       <div class="home-pub-header">
         <span class="home-pub-venue">NeurIPS 2025 Poster</span>
         <span class="home-pub-year">2025</span>
@@ -144,7 +149,7 @@ redirect_from:
       </div>
     </div>
 
-    <div class="home-pub-card">
+    <div class="home-pub-card" data-first-author="false">
       <div class="home-pub-header">
         <span class="home-pub-venue">ICLR 2025 Spotlight</span>
         <span class="home-pub-year">2025</span>
@@ -162,6 +167,7 @@ redirect_from:
       </div>
     </div>
 
+    </div>
   </div>
 </div>
 
@@ -217,3 +223,5 @@ redirect_from:
     </div>
   </div>
 </div>
+
+{% include pub-filter-script.html %}

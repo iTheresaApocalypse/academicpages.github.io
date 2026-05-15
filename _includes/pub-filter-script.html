@@ -1,0 +1,33 @@
+<script>
+(function () {
+  function initPubFilter(root) {
+    var buttons = root.querySelectorAll("[data-pub-filter]");
+    var items = root.querySelectorAll("[data-first-author]");
+    if (!buttons.length || !items.length) return;
+    function setMode(mode) {
+      items.forEach(function (el) {
+        var isFirst = el.getAttribute("data-first-author") === "true";
+        el.style.display = mode === "all" || isFirst ? "" : "none";
+      });
+      root.querySelectorAll(".pub-category-block").forEach(function (block) {
+        var anyVisible = false;
+        block.querySelectorAll("[data-first-author]").forEach(function (el) {
+          if (el.style.display !== "none") anyVisible = true;
+        });
+        block.style.display = anyVisible ? "" : "none";
+      });
+      buttons.forEach(function (btn) {
+        var active = btn.getAttribute("data-pub-filter") === mode;
+        btn.classList.toggle("pub-filter__btn--active", active);
+        btn.setAttribute("aria-selected", active ? "true" : "false");
+      });
+    }
+    buttons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        setMode(btn.getAttribute("data-pub-filter"));
+      });
+    });
+  }
+  document.querySelectorAll(".js-pub-filter-root").forEach(initPubFilter);
+})();
+</script>
