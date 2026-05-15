@@ -26,21 +26,27 @@ author_profile: true
   {% endif %}
 
   {% comment %} Main publications: by category or single list {% endcomment %}
-  <section class="pub-section">
+  <section class="pub-section pub-section--filterable">
+    <div class="pub-filter-bar" role="tablist" aria-label="Publication list filter">
+      <button type="button" class="pub-filter__btn pub-filter__btn--active" data-pub-filter="all" role="tab" aria-selected="true">All</button>
+      <button type="button" class="pub-filter__btn" data-pub-filter="selected" role="tab" aria-selected="false">Selected</button>
+    </div>
     {% if site.publication_category %}
       {% for category in site.publication_category %}
         {% assign cat_posts = site.publications | where: "category", category[0] | reverse %}
         {% if cat_posts.size > 0 %}
-          <h2 class="pub-section__title">{{ category[1].title }}</h2>
-          <div class="pub-list">
-            {% for post in cat_posts %}
-              {% include archive-single-publication.html %}
-            {% endfor %}
+          <div class="pub-category-block">
+            <h2 class="pub-section__title">{{ category[1].title }}</h2>
+            <div class="pub-list">
+              {% for post in cat_posts %}
+                {% include archive-single-publication.html %}
+              {% endfor %}
+            </div>
           </div>
         {% endif %}
       {% endfor %}
     {% else %}
-      <h2 class="pub-section__title">Selected Publications</h2>
+      <h2 class="pub-section__title">Publications</h2>
       <div class="pub-list">
         {% for post in site.publications reversed %}
           {% include archive-single-publication.html %}
@@ -49,3 +55,35 @@ author_profile: true
     {% endif %}
   </section>
 </div>
+
+<script>
+(function () {
+  var root = document.querySelector(".pub-section--filterable");
+  if (!root) return;
+  var buttons = root.querySelectorAll("[data-pub-filter]");
+  var items = root.querySelectorAll(".pub-list__item[data-first-author]");
+  function setMode(mode) {
+    items.forEach(function (el) {
+      var isFirst = el.getAttribute("data-first-author") === "true";
+      el.style.display = mode === "all" || isFirst ? "" : "none";
+    });
+    root.querySelectorAll(".pub-category-block").forEach(function (block) {
+      var anyVisible = false;
+      block.querySelectorAll(".pub-list__item[data-first-author]").forEach(function (el) {
+        if (el.style.display !== "none") anyVisible = true;
+      });
+      block.style.display = anyVisible ? "" : "none";
+    });
+    buttons.forEach(function (btn) {
+      var active = btn.getAttribute("data-pub-filter") === mode;
+      btn.classList.toggle("pub-filter__btn--active", active);
+      btn.setAttribute("aria-selected", active ? "true" : "false");
+    });
+  }
+  buttons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      setMode(btn.getAttribute("data-pub-filter"));
+    });
+  });
+})();
+</script>

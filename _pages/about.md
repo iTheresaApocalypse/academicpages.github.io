@@ -172,7 +172,8 @@ redirect_from:
       <h3 class="service-category-title"><i class="fas fa-search"></i> Conference Reviewer</h3>
       <div class="service-items">
         <div class="service-item">
-          <span class="service-badge">ICML 2026</span>
+          <span class="service-badge service-badge--golden">ICML 2026</span>
+          <span class="service-name">Golden Reviewer</span>
         </div>
       </div>
     </div>
