@@ -49,6 +49,30 @@
       color: var(--global-text-color);
     }
   }
+
+  .home-about-previous {
+    margin-top: -0.2em;
+    font-size: 0.92rem;
+    color: var(--global-text-color-light);
+    line-height: 1.65;
+
+    strong {
+      color: var(--global-text-color-light);
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--global-text-color-light);
+      text-decoration: underline;
+      text-decoration-color: var(--global-border-color);
+      text-underline-offset: 2px;
+
+      &:hover {
+        color: var(--global-link-color);
+        text-decoration-color: var(--global-link-color);
+      }
+    }
+  }
 }
 
 .home-research-interests {
