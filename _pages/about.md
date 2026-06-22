@@ -182,15 +182,12 @@ redirect_from:
         </div>
         <div class="service-item">
           <span class="service-badge">NeurIPS</span>
-          <span class="service-name">Reviewer</span>
         </div>
         <div class="service-item">
           <span class="service-badge">ICLR</span>
-          <span class="service-name">Reviewer</span>
         </div>
         <div class="service-item">
           <span class="service-badge">TMLR</span>
-          <span class="service-name">Reviewer</span>
         </div>
       </div>
     </div>
