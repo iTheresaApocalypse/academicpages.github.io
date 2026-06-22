@@ -180,6 +180,18 @@ redirect_from:
           <span class="service-badge service-badge--golden">ICML 2026</span>
           <span class="service-name">Golden Reviewer</span>
         </div>
+        <div class="service-item">
+          <span class="service-badge">NeurIPS</span>
+          <span class="service-name">Reviewer</span>
+        </div>
+        <div class="service-item">
+          <span class="service-badge">ICLR</span>
+          <span class="service-name">Reviewer</span>
+        </div>
+        <div class="service-item">
+          <span class="service-badge">TMLR</span>
+          <span class="service-name">Reviewer</span>
+        </div>
       </div>
     </div>
   </div>
