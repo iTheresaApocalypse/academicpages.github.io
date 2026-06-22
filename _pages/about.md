@@ -194,41 +194,15 @@ redirect_from:
   </div>
 </div>
 
-<div id="awards" class="home-section home-awards">
-  <h2><i class="fas fa-trophy"></i> Selected Awards</h2>
-  <div class="awards-list">
-    <div class="award-item">
-      <span class="award-year">2026</span>
-      <div class="award-info">
-        <strong>Teli Xu Scholarship</strong>
-        <span class="award-note">Highest scholarship at Beijing Institute of Technology (awarded to 10 undergraduates each year)</span>
-      </div>
-    </div>
-    <div class="award-item">
-      <span class="award-year">2023 / 2024</span>
-      <div class="award-info">
-        <strong>National Scholarship</strong>
-        <span class="award-note">Highest honor for Chinese undergraduates</span>
-      </div>
-    </div>
-    <div class="award-item">
-      <span class="award-year">2024</span>
-      <div class="award-info">
-        <strong>MCM Meritorious Winner (M Prize)</strong>
-      </div>
-    </div>
-    <div class="award-item">
-      <span class="award-year">2023</span>
-      <div class="award-info">
-        <strong>CUMCM Second Prize</strong>
-      </div>
-    </div>
-    <div class="award-item">
-      <span class="award-year">2023</span>
-      <div class="award-info">
-        <strong>CMC Second Prize</strong>
-      </div>
-    </div>
+<div id="contact" class="home-section home-contact">
+  <h2><i class="fas fa-envelope"></i> Email</h2>
+  <div class="home-about-content">
+    <p>I truly believe that great ideas and improvements come from open discussions and debates in academia. If you have any thoughts, disagreements with my work, or fresh ideas you'd like to share, I'd be really grateful to hear from you.</p>
+    <p>If you've got any questions about my research, or if you've tried reaching out through GitHub issues and haven't heard back, please don't hesitate to drop me an email. I'm always happy to chat or help out in any way I can.</p>
+  </div>
+  <div class="contact-emails">
+    <a class="contact-email" href="mailto:kuanzhang2004@163.com"><i class="fas fa-paper-plane"></i> kuanzhang2004@163.com</a>
+    <a class="contact-email" href="mailto:kuanzhang2004@gmail.com"><i class="fas fa-paper-plane"></i> kuanzhang2004@gmail.com</a>
   </div>
 </div>
 
