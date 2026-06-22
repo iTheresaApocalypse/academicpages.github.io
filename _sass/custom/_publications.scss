@@ -532,15 +532,19 @@
 
 .service-items {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 0.6em;
 }
 
 .service-item {
   display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
   align-items: center;
-  gap: 0.8em;
-  padding: 0.8em 1.2em;
+  text-align: center;
+  gap: 0.6em;
+  padding: 0.9em 1em;
   background: var(--global-code-background-color);
   border: 1px solid var(--global-border-color);
   border-radius: 8px;
@@ -549,7 +553,7 @@
   &:hover {
     border-color: var(--global-link-color);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-    transform: translateX(4px);
+    transform: translateY(-4px);
   }
 }
 
@@ -684,8 +688,7 @@
   }
 
   .service-item {
-    flex-direction: column;
-    align-items: flex-start;
+    flex: 1 1 40%;
     gap: 0.4em;
   }
 }
