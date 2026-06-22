@@ -176,19 +176,10 @@ redirect_from:
     <div class="service-category">
       <h3 class="service-category-title"><i class="fas fa-search"></i> Conference Reviewer</h3>
       <div class="service-items">
-        <div class="service-item">
-          <span class="service-badge service-badge--golden">ICML 2026</span>
-          <span class="service-name">Golden Reviewer</span>
-        </div>
-        <div class="service-item">
-          <span class="service-badge">NeurIPS</span>
-        </div>
-        <div class="service-item">
-          <span class="service-badge">ICLR</span>
-        </div>
-        <div class="service-item">
-          <span class="service-badge">TMLR</span>
-        </div>
+        <span class="service-badge service-badge--golden">ICML Golden Reviewer</span>
+        <span class="service-badge">NeurIPS</span>
+        <span class="service-badge">ICLR</span>
+        <span class="service-badge">TMLR</span>
       </div>
     </div>
   </div>
