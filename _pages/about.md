@@ -93,6 +93,27 @@ redirect_from:
 
     <div class="home-pub-card home-pub-card--new home-pub-card--first-author" data-first-author="true">
       <div class="home-pub-header">
+        <span class="home-pub-venue">ECCV 2026</span>
+        <span class="home-pub-year">2026</span>
+      </div>
+      <h3 class="home-pub-title">
+        <a href="https://vsi-super-wild.github.io/">Towards Spatial Supersensing in the Wild</a>
+      </h3>
+      <p class="home-pub-authors">Tianjun Gu*, Tianyu Xin*, <strong>Kuan Zhang</strong>*, Bowen Yang, Kok-Chung Chua, Peize Li, Xinran Zhang, Yupeng Chen, Qiyue Zhao, Qinlei Xie, Jianhang Liu, Yucheng Lu, Yinan Han, Marco Pavone, Yiming Li†</p>
+      <div class="home-pub-figure">
+        <img src="{{ site.baseurl }}/images/vsi-super-wild.png" alt="VSI-Super-Wild Paper Figure">
+      </div>
+      <p class="home-pub-desc">VSI-Super-Wild is a benchmark for spatial supersensing built from 442 real-world long-form, in-the-wild videos across 8 scene categories with 6,980 human-verified QA pairs, probing world-state understanding across agent, objects, and environment. Evaluating 13 multimodal models reveals that even strong models fail at coherent world-state tracking over time, exposing four failure modes: spatial collapse, semantic shortcuts, insufficient update, and instance confusion.</p>
+      <div class="home-pub-links">
+        <span class="home-pub-link home-pub-link--disabled" aria-disabled="true" title="Paper coming soon"><i class="fas fa-file-pdf"></i> Paper</span>
+        <a href="https://vsi-super-wild.github.io/" class="home-pub-link home-pub-link--project" target="_blank"><i class="fas fa-globe"></i> Project</a>
+        <a href="https://github.com/THUSI-Lab/VSI-Super-Wild" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
+        <a href="https://huggingface.co/datasets/THUSI-Lab/VSI-Super-Wild" class="home-pub-link home-pub-link--dataset" target="_blank"><i class="fas fa-database"></i> Dataset</a>
+      </div>
+    </div>
+
+    <div class="home-pub-card home-pub-card--new home-pub-card--first-author" data-first-author="true">
+      <div class="home-pub-header">
         <span class="home-pub-venue home-pub-venue--preprint">arXiv 2026</span>
         <span class="home-pub-year">2026</span>
       </div>

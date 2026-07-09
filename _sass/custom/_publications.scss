@@ -446,6 +446,37 @@
       box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
     }
   }
+
+  &--dataset {
+    color: #fff;
+    background: linear-gradient(135deg, #ff9d00 0%, #ff6f00 100%);
+    border-color: #ff9d00;
+    box-shadow: 0 2px 4px rgba(255, 111, 0, 0.25);
+
+    &:hover {
+      color: #fff;
+      background: linear-gradient(135deg, #ff6f00 0%, #e65100 100%);
+      border-color: #ff6f00;
+      box-shadow: 0 3px 8px rgba(255, 111, 0, 0.4);
+    }
+  }
+
+  &--disabled {
+    color: var(--global-text-color-light);
+    background: var(--global-code-background-color);
+    border-color: var(--global-border-color);
+    border-style: dashed;
+    cursor: not-allowed;
+    opacity: 0.65;
+
+    &:hover {
+      color: var(--global-text-color-light);
+      background: var(--global-code-background-color);
+      border-color: var(--global-border-color);
+      transform: none;
+      box-shadow: none;
+    }
+  }
 }
 
 /* ---------- Awards ---------- */
