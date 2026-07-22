@@ -30,7 +30,7 @@ author:
   employer         : "BIT"
   uri              : # URL
   email            : "kuanzhang2004@163.com"
-  cv               : "/files/resume_eng.pdf" # sidebar CV link (PDF)
+  cv               : # "/files/resume_eng.pdf" # temporarily hidden — sidebar CV link (PDF)
 
   # Academic websites
   academia         : # URL
