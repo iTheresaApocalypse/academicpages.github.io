@@ -27,10 +27,10 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "An Artificial Intelligence Researcher"
   location         : "Beijing"
-  employer         : "BIT"
+  employer         : "THU"
   uri              : # URL
   email            : "kuanzhang2004@163.com"
-  cv               : # "/files/resume_eng.pdf" # temporarily hidden — sidebar CV link (PDF)
+  cv               : # "/files/resume_eng.pdf?v=20260622" # temporarily hidden — sidebar CV link (PDF)
 
   # Academic websites
   academia         : # URL
